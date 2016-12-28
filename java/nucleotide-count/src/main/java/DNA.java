@@ -9,9 +9,9 @@ public class DNA {
     dna.put('G', 0);
     dna.put('C', 0);
     dna.put('T', 0);
-    for (Character eachdna : s.toCharArray()) {
-      int prevcount = dna.get(eachdna);
-      dna.put(eachdna, prevcount + 1);
+    for (Character eachDna : s.toCharArray()) {
+      int oldCount = dna.get(eachDna);
+      dna.put(eachDna, oldCount + 1);
     }
   }
 
